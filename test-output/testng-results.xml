@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="6" passed="5" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-05-20T10:51:21Z" name="Suite" finished-at="2020-05-20T11:00:22Z" duration-ms="540990">
+    <groups>
+    </groups>
+    <test started-at="2020-05-20T10:51:21Z" name="Test" finished-at="2020-05-20T11:00:22Z" duration-ms="540990">
+      <class name="iPayedAppiumFramework.dummyPackage.TestclassBase">
+        <test-method is-config="true" signature="killNodes()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:21:21Z" name="killNodes" finished-at="2020-05-20T16:21:24Z" duration-ms="3016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killNodes -->
+        <test-method is-config="true" signature="userLogin()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:21:24Z" name="userLogin" finished-at="2020-05-20T16:22:31Z" duration-ms="67241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method signature="saveYourSpotAtEvent()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:22:31Z" name="saveYourSpotAtEvent" finished-at="2020-05-20T16:22:51Z" duration-ms="20019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveYourSpotAtEvent -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:22:51Z" name="closeUp" finished-at="2020-05-20T16:22:51Z" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="userLogin()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:22:51Z" name="userLogin" finished-at="2020-05-20T16:23:57Z" duration-ms="65834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method signature="likeEventAndCheckUpcomingEventCount()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:23:57Z" name="likeEventAndCheckUpcomingEventCount" finished-at="2020-05-20T16:24:10Z" duration-ms="13474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- likeEventAndCheckUpcomingEventCount -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:24:10Z" name="closeUp" finished-at="2020-05-20T16:24:10Z" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="userLogin()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:24:10Z" name="userLogin" finished-at="2020-05-20T16:25:16Z" duration-ms="65551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method signature="bookmarkEventCheckUpcomingEventCount()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:25:16Z" name="bookmarkEventCheckUpcomingEventCount" finished-at="2020-05-20T16:26:24Z" duration-ms="68531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookmarkEventCheckUpcomingEventCount -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:26:24Z" name="closeUp" finished-at="2020-05-20T16:26:24Z" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="userLogin()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:26:24Z" name="userLogin" finished-at="2020-05-20T16:27:30Z" duration-ms="65734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method signature="giveUpYourSpot()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:27:30Z" name="giveUpYourSpot" finished-at="2020-05-20T16:27:48Z" duration-ms="17470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- giveUpYourSpot -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:27:48Z" name="closeUp" finished-at="2020-05-20T16:27:48Z" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="userLogin()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:27:48Z" name="userLogin" finished-at="2020-05-20T16:28:53Z" duration-ms="64947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method signature="dislikeEvent()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:28:53Z" name="dislikeEvent" finished-at="2020-05-20T16:29:09Z" duration-ms="15944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dislikeEvent -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:29:09Z" name="closeUp" finished-at="2020-05-20T16:29:09Z" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="userLogin()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:29:09Z" name="userLogin" finished-at="2020-05-20T16:29:09Z" duration-ms="0" status="FAIL">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 2 out of bounds for length 2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:458)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.pagefactory.ElementListInterceptor.getObject(ElementListInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfAListOfElements.intercept(InterceptorOfAListOfElements.java:49)
+	at $java.util.ArrayList$$EnhancerByCGLIB$$b5855c01.get(<generated>)
+	at iPayedAppiumFramework.pageObject.EnterPinPage.enterPin(EnterPinPage.java:32)
+	at iPayedAppiumFramework.dummyPackage.TestclassBase.userLogin(TestclassBase.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method signature="unbookMarkEvent()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:30:22Z" name="unbookMarkEvent" finished-at="2020-05-20T16:30:22Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unbookMarkEvent -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:30:22Z" name="closeUp" finished-at="2020-05-20T16:30:22Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+      </class> <!-- iPayedAppiumFramework.dummyPackage.TestclassBase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

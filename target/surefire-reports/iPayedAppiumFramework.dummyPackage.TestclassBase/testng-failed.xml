@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [iPayedAppiumFramework.dummyPackage.TestclassBase]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="iPayedAppiumFramework.dummyPackage.TestclassBase">
+        <methods>
+          <include name="bookmarkEventCheckUpcomingEventCount"/>
+          <include name="unbookMarkEvent"/>
+          <include name="giveUpYourSpot"/>
+          <include name="dislikeEvent"/>
+          <include name="saveYourSpotAtEvent"/>
+          <include name="userLogin"/>
+          <include name="likeEventAndCheckUpcomingEventCount"/>
+        </methods>
+      </class> <!-- iPayedAppiumFramework.dummyPackage.TestclassBase -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [iPayedAppiumFramework.dummyPackage.TestclassBase] -->

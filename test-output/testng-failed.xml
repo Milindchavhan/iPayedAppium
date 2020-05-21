@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="iPayedAppiumFramework.helperClasses.Listeners"/>
+    <listener class-name="iPayedAppiumFramework.helperClasses.ExtentReporterNG"/>
+  </listeners>
+  <test parallel="none" name="Test(failed)" preserve-order="true">
+    <classes>
+      <class name="iPayedAppiumFramework.dummyPackage.TestclassBase">
+        <methods>
+          <include name="unbookMarkEvent"/>
+          <include name="closeUp"/>
+          <include name="userLogin"/>
+          <include name="killNodes"/>
+        </methods>
+      </class> <!-- iPayedAppiumFramework.dummyPackage.TestclassBase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
