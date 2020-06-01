@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import iPayedAppiumFramework.helperClasses.ReadExcelFileData;
 import iPayedAppiumFramework.pageObject.EnterPinPage;
 import iPayedAppiumFramework.pageObject.EventsPage;
 import iPayedAppiumFramework.pageObject.HamburgerMenuPage;
@@ -20,6 +21,7 @@ import iPayedAppiumFramework.pageObject.WelcomePage;
 import iPayedAppiumFramework.resources.Base;
 import iPayedAppiumFramework.utility.PageScroll;
 import iPayedAppiumFramework.utility.UpcomingEventCount;
+import iPayedAppiumFramework.utility.Waits;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
@@ -35,10 +37,14 @@ public class TestclassBase extends Base{
 	public HamburgerMenuPage hamburgerMenuPage;
 	public UpcomingEventPage upcomingEventPage;
 	public UpcomingEventCount upcomingEventCount;
+	public Waits waits;
+	
+	
 	
 	@BeforeTest()
 	public void killNodes() throws InterruptedException, IOException
 	{
+		
 		killAllNodes();
 	}
 	
@@ -58,17 +64,20 @@ public class TestclassBase extends Base{
 		hamburgerMenuPage = new HamburgerMenuPage(driver);
 		upcomingEventPage = new UpcomingEventPage(driver);
 		upcomingEventCount = new UpcomingEventCount(driver);
+		waits = new Waits(driver);
+		//waits = new Waits(driver);
+		
 		welcomePage.skipButton.click();
 		eventsPage.iPayedLogoOnEventPage.click();
 		loginPage.deviceLocationAllowButtonOnPopup.click();
-		
 		Thread.sleep(2000);
 		
 		loginPage.deviceLocationAllowButtonOnPopup.click();
-		loginPage.emailTextField.sendKeys("testpr1@yopmail.com");
-		loginPage.passwordTextField.sendKeys("welcome@123");
+		loginPage.emailTextField.sendKeys(ReadExcelFileData.readSingleUserFromExcel());
+		loginPage.passwordTextField.sendKeys(ReadExcelFileData.readSinglePasswordFromExcel());
 		loginPage.loginButton.click();
 		
+		//waits.explicitWaitForVisibilityOfElement(enterPinPage.pleaseEnterPinText);
 		Thread.sleep(2000);
 		
 		enterPinPage.enterPin();
@@ -83,9 +92,11 @@ public class TestclassBase extends Base{
 	{
 		eventsPage.eventName.get(0).click();
 		partyEventPage.saveYourSpotButton.click();
-		Thread.sleep(2000);
+		waits.explicitWaitForClickable(partyEventPage.partyEventBackButton);
+		//Thread.sleep(2000);
 		partyEventPage.partyEventBackButton.click();
-		Thread.sleep(4000);
+		waits.explicitWaitForClickable(eventsPage.hamburgerIcon);
+		//Thread.sleep(4000);
 		eventsPage.hamburgerIcon.click();
 		hamburgerMenuPage.myEvents.click();
 		int actualUpcomingCount =upcomingEventCount.getUpcomingEventCount(upcomingEventPage.upcomingEventHeader); 
@@ -97,7 +108,8 @@ public class TestclassBase extends Base{
 	{
 		eventsPage.eventName.get(1).click();
 		partyEventPage.likePartyEventButton.click();
-		Thread.sleep(2000);
+		waits.explicitWaitForClickable(partyEventPage.partyEventBackButton);
+		//Thread.sleep(2000);
 		partyEventPage.partyEventBackButton.click();
 		eventsPage.hamburgerIcon.click();
 		hamburgerMenuPage.myEvents.click();
@@ -110,7 +122,9 @@ public class TestclassBase extends Base{
 	{
 		pageScroll.scrollPageToText("1020 SE 7th Ave,\r\n" + "Portland, OR");
 		eventsPage.bookMarkIcon.click();
-		Thread.sleep(2000);
+		//waits.explicitWaitForVisibilityOfElement(eventsPage.hamburgerIcon);
+		waits.explicitWaitForClickable(eventsPage.hamburgerIcon);
+		//Thread.sleep(2000);
 		eventsPage.hamburgerIcon.click();
 		hamburgerMenuPage.myEvents.click();
 		int actualUpcomingCount =upcomingEventCount.getUpcomingEventCount(upcomingEventPage.upcomingEventHeader); 
@@ -125,9 +139,9 @@ public class TestclassBase extends Base{
 		upcomingEventPage.eventMainLayout.get(0).click();
 		System.out.println(partyEventPage.saveYourSpotButton.getText());
 		partyEventPage.saveYourSpotButton.click();
-		Thread.sleep(4000);
+		waits.explicitWaitForClickable(partyEventPage.partyEventBackButton);
+		//Thread.sleep(4000);
 		partyEventPage.partyEventBackButton.click();
-		Thread.sleep(3000);
 		int actualUpcomingCount =upcomingEventCount.getUpcomingEventCount(upcomingEventPage.upcomingEventHeader); 
 		Assert.assertEquals(actualUpcomingCount, 2);
 	}
@@ -139,9 +153,9 @@ public class TestclassBase extends Base{
 		hamburgerMenuPage.myEvents.click();
 		upcomingEventPage.eventMainLayout.get(0).click();
 		partyEventPage.likePartyEventButton.click();
-		Thread.sleep(3000);
+		waits.explicitWaitForClickable(partyEventPage.partyEventBackButton);
+		//Thread.sleep(3000);
 		partyEventPage.partyEventBackButton.click();
-		Thread.sleep(3000);
 		int actualUpcomingCount =upcomingEventCount.getUpcomingEventCount(upcomingEventPage.upcomingEventHeader); 
 		Assert.assertEquals(actualUpcomingCount, 1);
 	}
@@ -152,16 +166,18 @@ public class TestclassBase extends Base{
 		eventsPage.hamburgerIcon.click();
 		hamburgerMenuPage.myEvents.click();
 		upcomingEventPage.eventMainLayout.get(0).click();
-		Thread.sleep(3000);
+		waits.explicitWaitForClickable(partyEventPage.partyEventBackButton);
+		//Thread.sleep(3000);
 		partyEventPage.bookmarkPartyEventButton.click();
 		partyEventPage.partyEventBackButton.click();
-		Assert.assertTrue(upcomingEventPage.noEventsAvailable.isDisplayed());
-		
+		Assert.assertTrue(upcomingEventPage.noEventsAvailable.isDisplayed());	
 	}
 	
 	@AfterMethod
-	public void closeUp()
+	public void closeUp() throws IOException, InterruptedException
 	{
+		driver.closeApp();
+		killEmulator();
 		service.stop();
 	}
 

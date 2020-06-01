@@ -12,7 +12,7 @@ public class Listeners implements ITestListener{
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
@@ -24,8 +24,14 @@ public class Listeners implements ITestListener{
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
-		
+		String s = result.getName();
+		//System.out.println(s);
+		try {
+			Base.getScreenShot(s);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	@Override
@@ -36,15 +42,7 @@ public class Listeners implements ITestListener{
 
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		String s = result.getName();
-		//System.out.println(s);
-		try {
-			Base.getScreenShot(s);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
+			
 	}
 
 	@Override

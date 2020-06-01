@@ -25,6 +25,9 @@ public class EnterPinPage {
 	@AndroidFindBy(id="com.app.iPayed:id/cancelFingerprintButton")
 	public WebElement enabledFingurePrintNoButton;
 	
+	@AndroidFindBy(id="com.app.iPayed:id/tv_pin")
+	public WebElement pleaseEnterPinText;
+	
 	public void enterPin()
 	{
 		for(int i = 0; i<=3;i++)
