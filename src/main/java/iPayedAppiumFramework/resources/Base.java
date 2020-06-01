@@ -11,7 +11,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import iPayedAppiumFramework.utility.ExcelFileUtilities;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -40,6 +39,12 @@ public class Base {
 		Runtime.getRuntime().exec("taskkill /F /IM node.exe");
 		Thread.sleep(3000);
 	}
+	
+	public static void killEmulator() throws IOException, InterruptedException
+	{
+		Runtime.getRuntime().exec("adb -s emulator-5554 emu kill");
+		Thread.sleep(3000);
+	}
 	 
 	public static AndroidDriver<AndroidElement> capabilities(String appName) throws IOException, InterruptedException
 	{
@@ -54,11 +59,13 @@ public class Base {
 		String deviceName = (String) prop.get("device");
 		startEmulator();
 		
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 		
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 		capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+		//capabilities.setCapability(“deviceReadyTimeout”,“10”);
+		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT,15);
 		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
 		return driver;
 	}
@@ -66,23 +73,6 @@ public class Base {
 	public static void getScreenShot(String s) throws IOException
 	{
 		File screenShot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenShot, new File (System.getProperty("user.dir"+"\\screenShots\\"+s+".png")));
-	}
-	
-	public static String[][] readUserNameAndPasswordFromExcel() throws IOException
-	{
-		String excelFilePath = "D:\\Selenium\\iPayedAppiumFramework\\src\\main\\java\\iPayedAppiumFramework\\resources\\Data.xlsx";
-		ExcelFileUtilities excelFileUtilities = new ExcelFileUtilities();
-		int rowNum = excelFileUtilities.getRowCount(excelFilePath, "Sheet1");
-		int cellNum = excelFileUtilities.getCellCount(excelFilePath, "Sheet1", 1);
-		String userNamePassword[][] = new String [rowNum][cellNum];
-		for(int i =1; i<=rowNum; i++)
-		{
-			for(int j =0; j<=cellNum-1; j++)
-			{
-			userNamePassword[i-1][j] = excelFileUtilities.getCellData(excelFilePath, "sheet1", i, j);
-			}
-		}
-		return userNamePassword;
+		FileUtils.copyFile(screenShot, new File (System.getProperty("user.dir")+"\\screenShots\\"+s+".png"));
 	}
 }

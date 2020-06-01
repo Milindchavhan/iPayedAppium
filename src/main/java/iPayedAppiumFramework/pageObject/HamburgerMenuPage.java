@@ -1,5 +1,7 @@
 package iPayedAppiumFramework.pageObject;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
@@ -17,5 +19,8 @@ public class HamburgerMenuPage {
 	
 	@AndroidFindBy(xpath="//*[@text='My Events']")
 	public WebElement myEvents;
+	
+	@AndroidFindBy(xpath="//*[@text='Logout']")
+	public List<WebElement> logout;
 
 }

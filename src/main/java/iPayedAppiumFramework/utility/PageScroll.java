@@ -23,5 +23,4 @@ public class PageScroll {
 	{
 		driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().resourceId(\""+resourceID+"\")).scrollIntoView(new UiSelector().textMatches(\""+text+"\").instance(0))"));
 	}
-	
 }

@@ -36,5 +36,4 @@ public class AndroidActions {
 		t.longPress(longPressOptions().withElement(element(element)).withDuration(ofSeconds(2))).release().perform();
 	}
 	
-
 }
