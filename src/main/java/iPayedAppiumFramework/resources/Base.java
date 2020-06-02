@@ -62,10 +62,13 @@ public class Base {
 		Thread.sleep(15000);
 		
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
+		capabilities.setCapability("appActivity", ".ContactManager");
+		capabilities.setCapability("appPackage", "com.example.android.contactmanager");
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 		capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
-		//capabilities.setCapability(“deviceReadyTimeout”,“10”);
+		//capabilities.setCapability(deviceReadyTimeout,“10”);
 		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT,15);
+		capabilities.setCapability("–session-override",true);
 		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
 		return driver;
 	}
