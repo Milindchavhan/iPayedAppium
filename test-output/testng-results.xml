@@ -1,96 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="6" passed="5" failed="0" skipped="1">
+<testng-results total="22" passed="0" failed="0" skipped="22">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-20T10:51:21Z" name="Suite" finished-at="2020-05-20T11:00:22Z" duration-ms="540990">
+  <suite started-at="2020-06-01T17:11:22Z" name="Suite" finished-at="2020-06-01T17:12:14Z" duration-ms="51892">
     <groups>
     </groups>
-    <test started-at="2020-05-20T10:51:21Z" name="Test" finished-at="2020-05-20T11:00:22Z" duration-ms="540990">
-      <class name="iPayedAppiumFramework.dummyPackage.TestclassBase">
-        <test-method is-config="true" signature="killNodes()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:21:21Z" name="killNodes" finished-at="2020-05-20T16:21:24Z" duration-ms="3016" status="PASS">
+    <test started-at="2020-06-01T17:11:22Z" name="Test" finished-at="2020-06-01T17:12:14Z" duration-ms="51892">
+      <class name="iPayedAppiumFramework.testCases.LoginPageTestCases">
+        <test-method is-config="true" signature="killNodes()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:41:22Z" name="killNodes" finished-at="2020-06-01T22:41:25Z" duration-ms="3015" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killNodes -->
-        <test-method is-config="true" signature="userLogin()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:21:24Z" name="userLogin" finished-at="2020-05-20T16:22:31Z" duration-ms="67241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userLogin -->
-        <test-method signature="saveYourSpotAtEvent()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:22:31Z" name="saveYourSpotAtEvent" finished-at="2020-05-20T16:22:51Z" duration-ms="20019" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveYourSpotAtEvent -->
-        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:22:51Z" name="closeUp" finished-at="2020-05-20T16:22:51Z" duration-ms="51" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeUp -->
-        <test-method is-config="true" signature="userLogin()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:22:51Z" name="userLogin" finished-at="2020-05-20T16:23:57Z" duration-ms="65834" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userLogin -->
-        <test-method signature="likeEventAndCheckUpcomingEventCount()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:23:57Z" name="likeEventAndCheckUpcomingEventCount" finished-at="2020-05-20T16:24:10Z" duration-ms="13474" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- likeEventAndCheckUpcomingEventCount -->
-        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:24:10Z" name="closeUp" finished-at="2020-05-20T16:24:10Z" duration-ms="52" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeUp -->
-        <test-method is-config="true" signature="userLogin()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:24:10Z" name="userLogin" finished-at="2020-05-20T16:25:16Z" duration-ms="65551" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userLogin -->
-        <test-method signature="bookmarkEventCheckUpcomingEventCount()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:25:16Z" name="bookmarkEventCheckUpcomingEventCount" finished-at="2020-05-20T16:26:24Z" duration-ms="68531" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bookmarkEventCheckUpcomingEventCount -->
-        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:26:24Z" name="closeUp" finished-at="2020-05-20T16:26:24Z" duration-ms="51" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeUp -->
-        <test-method is-config="true" signature="userLogin()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:26:24Z" name="userLogin" finished-at="2020-05-20T16:27:30Z" duration-ms="65734" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userLogin -->
-        <test-method signature="giveUpYourSpot()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:27:30Z" name="giveUpYourSpot" finished-at="2020-05-20T16:27:48Z" duration-ms="17470" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- giveUpYourSpot -->
-        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:27:48Z" name="closeUp" finished-at="2020-05-20T16:27:48Z" duration-ms="52" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeUp -->
-        <test-method is-config="true" signature="userLogin()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:27:48Z" name="userLogin" finished-at="2020-05-20T16:28:53Z" duration-ms="64947" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userLogin -->
-        <test-method signature="dislikeEvent()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:28:53Z" name="dislikeEvent" finished-at="2020-05-20T16:29:09Z" duration-ms="15944" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dislikeEvent -->
-        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:29:09Z" name="closeUp" finished-at="2020-05-20T16:29:09Z" duration-ms="51" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeUp -->
-        <test-method is-config="true" signature="userLogin()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:29:09Z" name="userLogin" finished-at="2020-05-20T16:29:09Z" duration-ms="0" status="FAIL">
-          <exception class="java.lang.IndexOutOfBoundsException">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:41:25Z" name="startUp" finished-at="2020-06-01T22:41:25Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Index 2 out of bounds for length 2]]>
+              <![CDATA[Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20871ms.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MP-LAP069', ip: '192.168.2.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20871ms.
+    at getResponseForW3CError (C:\Users\Mobile Programming\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\Mobile Programming\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MP-LAP069', ip: '192.168.2.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-	at java.base/java.util.Objects.checkIndex(Objects.java:372)
-	at java.base/java.util.ArrayList.get(ArrayList.java:458)
-	at java.base/jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.appium.java_client.pagefactory.ElementListInterceptor.getObject(ElementListInterceptor.java:40)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfAListOfElements.intercept(InterceptorOfAListOfElements.java:49)
-	at $java.util.ArrayList$$EnhancerByCGLIB$$b5855c01.get(<generated>)
-	at iPayedAppiumFramework.pageObject.EnterPinPage.enterPin(EnterPinPage.java:32)
-	at iPayedAppiumFramework.dummyPackage.TestclassBase.userLogin(TestclassBase.java:74)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20871ms.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MP-LAP069', ip: '192.168.2.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20871ms.
+    at getResponseForW3CError (C:\Users\Mobile Programming\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\Mobile Programming\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MP-LAP069', ip: '192.168.2.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:88)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:98)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:94)
+	at iPayedAppiumFramework.resources.Base.capabilities(Base.java:72)
+	at iPayedAppiumFramework.testCases.LoginPageTestCases.startUp(LoginPageTestCases.java:48)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -117,21 +78,305 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 41 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20871ms.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MP-LAP069', ip: '192.168.2.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20871ms.
+    at getResponseForW3CError (C:\Users\Mobile Programming\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\Mobile Programming\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	... 46 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userLogin -->
-        <test-method signature="unbookMarkEvent()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:30:22Z" name="unbookMarkEvent" finished-at="2020-05-20T16:30:22Z" duration-ms="1" status="SKIP">
+        </test-method> <!-- startUp -->
+        <test-method signature="verifyEmailFieldEnabled()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyEmailFieldEnabled" finished-at="2020-06-01T22:42:14Z" duration-ms="2" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- unbookMarkEvent -->
-        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c]" started-at="2020-05-20T16:30:22Z" name="closeUp" finished-at="2020-05-20T16:30:22Z" duration-ms="0" status="SKIP">
+        </test-method> <!-- verifyEmailFieldEnabled -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeUp -->
-      </class> <!-- iPayedAppiumFramework.dummyPackage.TestclassBase -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="verifyEmailPlaceholder()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyEmailPlaceholder" finished-at="2020-06-01T22:42:14Z" duration-ms="5" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmailPlaceholder -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="verifyForgotPasswordEnabled()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyForgotPasswordEnabled" finished-at="2020-06-01T22:42:14Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPasswordEnabled -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="verifyForgotPasswordLinkWorking()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyForgotPasswordLinkWorking" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPasswordLinkWorking -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="verifyForgotPasswordText()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyForgotPasswordText" finished-at="2020-06-01T22:42:14Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgotPasswordText -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method signature="verifyLoginWithText()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyLoginWithText" finished-at="2020-06-01T22:42:14Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithText -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method signature="verifyNotRegisterText()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyNotRegisterText" finished-at="2020-06-01T22:42:14Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNotRegisterText -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="verifyPasswordFieldEnabled()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyPasswordFieldEnabled" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordFieldEnabled -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="verifyPasswordPlaceholder()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyPasswordPlaceholder" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordPlaceholder -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="verifyPasswordTextShowPasswordDisabled()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyPasswordTextShowPasswordDisabled" finished-at="2020-06-01T22:42:14Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordTextShowPasswordDisabled -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="verifyPasswordTextShowPasswordEnabled()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyPasswordTextShowPasswordEnabled" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordTextShowPasswordEnabled -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method signature="verifyPinAndTouchIDText()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyPinAndTouchIDText" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPinAndTouchIDText -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="verifyRememberMeText()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyRememberMeText" finished-at="2020-06-01T22:42:14Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRememberMeText -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method signature="verifyRememberMeUnchecked()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyRememberMeUnchecked" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRememberMeUnchecked -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="verifyRemenberMeWorking()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyRemenberMeWorking" finished-at="2020-06-01T22:42:14Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRemenberMeWorking -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="verifyRemenebrMeIsSelectAndDeselect()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyRemenebrMeIsSelectAndDeselect" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRemenebrMeIsSelectAndDeselect -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method signature="verifyShowPasswordFiledEnabled()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyShowPasswordFiledEnabled" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyShowPasswordFiledEnabled -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="verifySignUpEnabled()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifySignUpEnabled" finished-at="2020-06-01T22:42:14Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpEnabled -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="verifySignUpText()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifySignUpText" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpText -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method signature="verifyUserLoginWithCorrectCredentials()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="verifyUserLoginWithCorrectCredentials" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLoginWithCorrectCredentials -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method signature="withoutEnabledPinCheckToasterMessage()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="withoutEnabledPinCheckToasterMessage" finished-at="2020-06-01T22:42:14Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withoutEnabledPinCheckToasterMessage -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="startUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="withoutEnabledTouchIDCheckToasterMessage()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="withoutEnabledTouchIDCheckToasterMessage" finished-at="2020-06-01T22:42:14Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withoutEnabledTouchIDCheckToasterMessage -->
+        <test-method is-config="true" signature="closeUp()[pri:0, instance:iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1]" started-at="2020-06-01T22:42:14Z" name="closeUp" finished-at="2020-06-01T22:42:14Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeUp -->
+      </class> <!-- iPayedAppiumFramework.testCases.LoginPageTestCases -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -7,14 +7,34 @@
   </listeners>
   <test parallel="none" name="Test(failed)" preserve-order="true">
     <classes>
-      <class name="iPayedAppiumFramework.dummyPackage.TestclassBase">
+      <class name="iPayedAppiumFramework.testCases.LoginPageTestCases">
         <methods>
-          <include name="unbookMarkEvent"/>
-          <include name="closeUp"/>
-          <include name="userLogin"/>
+          <include name="verifyRemenebrMeIsSelectAndDeselect"/>
+          <include name="verifyRememberMeText"/>
+          <include name="verifyForgotPasswordEnabled"/>
+          <include name="verifyPasswordFieldEnabled"/>
+          <include name="verifyPinAndTouchIDText"/>
+          <include name="verifyPasswordPlaceholder"/>
+          <include name="verifySignUpText"/>
+          <include name="verifyPasswordTextShowPasswordEnabled"/>
+          <include name="verifyRememberMeUnchecked"/>
+          <include name="verifySignUpEnabled"/>
+          <include name="withoutEnabledTouchIDCheckToasterMessage"/>
+          <include name="verifyEmailPlaceholder"/>
+          <include name="verifyUserLoginWithCorrectCredentials"/>
+          <include name="verifyRemenberMeWorking"/>
+          <include name="startUp"/>
+          <include name="verifyEmailFieldEnabled"/>
+          <include name="verifyForgotPasswordText"/>
+          <include name="verifyShowPasswordFiledEnabled"/>
+          <include name="withoutEnabledPinCheckToasterMessage"/>
+          <include name="verifyForgotPasswordLinkWorking"/>
+          <include name="verifyLoginWithText"/>
           <include name="killNodes"/>
+          <include name="verifyNotRegisterText"/>
+          <include name="verifyPasswordTextShowPasswordDisabled"/>
         </methods>
-      </class> <!-- iPayedAppiumFramework.dummyPackage.TestclassBase -->
+      </class> <!-- iPayedAppiumFramework.testCases.LoginPageTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

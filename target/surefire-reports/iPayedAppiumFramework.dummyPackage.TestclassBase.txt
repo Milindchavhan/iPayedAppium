@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: iPayedAppiumFramework.dummyPackage.TestclassBase
--------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 532.359 sec

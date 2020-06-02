@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/22</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 20 16:21:21 IST 2020</td>
+<td>Started on:</td><td>Mon Jun 01 22:41:22 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>540 seconds (540990 ms)</td>
+<tr><td>Total time:</td><td>51 seconds (51892 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,33 +75,83 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='iPayedAppiumFramework.dummyPackage.TestclassBase.userLogin()'><b>userLogin</b><br>Test class: iPayedAppiumFramework.dummyPackage.TestclassBase</td>
-<td><div><pre>java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-	at java.base/java.util.Objects.checkIndex(Objects.java:372)
-	at java.base/java.util.ArrayList.get(ArrayList.java:458)
-	at io.appium.java_client.pagefactory.ElementListInterceptor.getObject(ElementListInterceptor.java:40)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfAListOfElements.intercept(InterceptorOfAListOfElements.java:49)
-	at $java.util.ArrayList$$EnhancerByCGLIB$$b5855c01.get(&lt;generated&gt;)
-	at iPayedAppiumFramework.pageObject.EnterPinPage.enterPin(EnterPinPage.java:32)
-	at iPayedAppiumFramework.dummyPackage.TestclassBase.userLogin(TestclassBase.java:74)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1768473046", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1768473046'><pre>java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
-	at java.base/java.util.Objects.checkIndex(Objects.java:372)
-	at java.base/java.util.ArrayList.get(ArrayList.java:458)
-	at java.base/jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.appium.java_client.pagefactory.ElementListInterceptor.getObject(ElementListInterceptor.java:40)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfAListOfElements.intercept(InterceptorOfAListOfElements.java:49)
-	at $java.util.ArrayList$$EnhancerByCGLIB$$b5855c01.get(&lt;generated&gt;)
-	at iPayedAppiumFramework.pageObject.EnterPinPage.enterPin(EnterPinPage.java:32)
-	at iPayedAppiumFramework.dummyPackage.TestclassBase.userLogin(TestclassBase.java:74)
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20871ms.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MP-LAP069&apos;, ip: &apos;192.168.2.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20871ms.
+    at getResponseForW3CError (C:\Users\Mobile Programming\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\Mobile Programming\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MP-LAP069&apos;, ip: &apos;192.168.2.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
+	at iPayedAppiumFramework.resources.Base.capabilities(Base.java:72)
+	at iPayedAppiumFramework.testCases.LoginPageTestCases.startUp(LoginPageTestCases.java:48)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 41 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20871ms.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MP-LAP069&apos;, ip: &apos;192.168.2.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20871ms.
+    at getResponseForW3CError (C:\Users\Mobile Programming\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\Mobile Programming\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	... 46 more
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1392886653", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1392886653'><pre>org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20871ms.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MP-LAP069&apos;, ip: &apos;192.168.2.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20871ms.
+    at getResponseForW3CError (C:\Users\Mobile Programming\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\Mobile Programming\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MP-LAP069&apos;, ip: &apos;192.168.2.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
+	at iPayedAppiumFramework.resources.Base.capabilities(Base.java:72)
+	at iPayedAppiumFramework.testCases.LoginPageTestCases.startUp(LoginPageTestCases.java:48)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,9 +178,41 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 41 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20871ms.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MP-LAP069&apos;, ip: &apos;192.168.2.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20871ms.
+    at getResponseForW3CError (C:\Users\Mobile Programming\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\Mobile Programming\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:392:37)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	... 46 more
 </pre></div></td>
 <td>0</td>
-<td>iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c</td></tr>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -140,43 +222,220 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='iPayedAppiumFramework.dummyPackage.TestclassBase.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.dummyPackage.TestclassBase</td>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
 <td></td>
 <td>0</td>
-<td>iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
 <tr>
-<td title='iPayedAppiumFramework.dummyPackage.TestclassBase.bookmarkEventCheckUpcomingEventCount()'><b>bookmarkEventCheckUpcomingEventCount</b><br>Test class: iPayedAppiumFramework.dummyPackage.TestclassBase</td>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
 <td></td>
-<td>68</td>
-<td>iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c</td></tr>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
 <tr>
-<td title='iPayedAppiumFramework.dummyPackage.TestclassBase.dislikeEvent()'><b>dislikeEvent</b><br>Test class: iPayedAppiumFramework.dummyPackage.TestclassBase</td>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
 <td></td>
-<td>15</td>
-<td>iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c</td></tr>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
 <tr>
-<td title='iPayedAppiumFramework.dummyPackage.TestclassBase.giveUpYourSpot()'><b>giveUpYourSpot</b><br>Test class: iPayedAppiumFramework.dummyPackage.TestclassBase</td>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
 <td></td>
-<td>17</td>
-<td>iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c</td></tr>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
 <tr>
-<td title='iPayedAppiumFramework.dummyPackage.TestclassBase.likeEventAndCheckUpcomingEventCount()'><b>likeEventAndCheckUpcomingEventCount</b><br>Test class: iPayedAppiumFramework.dummyPackage.TestclassBase</td>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
 <td></td>
-<td>13</td>
-<td>iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c</td></tr>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
 <tr>
-<td title='iPayedAppiumFramework.dummyPackage.TestclassBase.saveYourSpotAtEvent()'><b>saveYourSpotAtEvent</b><br>Test class: iPayedAppiumFramework.dummyPackage.TestclassBase</td>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
 <td></td>
-<td>20</td>
-<td>iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c</td></tr>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.startUp()'><b>startUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.closeUp()'><b>closeUp</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -186,10 +445,115 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='iPayedAppiumFramework.dummyPackage.TestclassBase.unbookMarkEvent()'><b>unbookMarkEvent</b><br>Test class: iPayedAppiumFramework.dummyPackage.TestclassBase</td>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyEmailFieldEnabled()'><b>verifyEmailFieldEnabled</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
 <td></td>
 <td>0</td>
-<td>iPayedAppiumFramework.dummyPackage.TestclassBase@1ef6d34c</td></tr>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyEmailPlaceholder()'><b>verifyEmailPlaceholder</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyForgotPasswordEnabled()'><b>verifyForgotPasswordEnabled</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyForgotPasswordLinkWorking()'><b>verifyForgotPasswordLinkWorking</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyForgotPasswordText()'><b>verifyForgotPasswordText</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyLoginWithText()'><b>verifyLoginWithText</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyNotRegisterText()'><b>verifyNotRegisterText</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyPasswordFieldEnabled()'><b>verifyPasswordFieldEnabled</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyPasswordPlaceholder()'><b>verifyPasswordPlaceholder</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyPasswordTextShowPasswordDisabled()'><b>verifyPasswordTextShowPasswordDisabled</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyPasswordTextShowPasswordEnabled()'><b>verifyPasswordTextShowPasswordEnabled</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyPinAndTouchIDText()'><b>verifyPinAndTouchIDText</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyRememberMeText()'><b>verifyRememberMeText</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyRememberMeUnchecked()'><b>verifyRememberMeUnchecked</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyRemenberMeWorking()'><b>verifyRemenberMeWorking</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyRemenebrMeIsSelectAndDeselect()'><b>verifyRemenebrMeIsSelectAndDeselect</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyShowPasswordFiledEnabled()'><b>verifyShowPasswordFiledEnabled</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifySignUpEnabled()'><b>verifySignUpEnabled</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifySignUpText()'><b>verifySignUpText</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.verifyUserLoginWithCorrectCredentials()'><b>verifyUserLoginWithCorrectCredentials</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.withoutEnabledPinCheckToasterMessage()'><b>withoutEnabledPinCheckToasterMessage</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
+<tr>
+<td title='iPayedAppiumFramework.testCases.LoginPageTestCases.withoutEnabledTouchIDCheckToasterMessage()'><b>withoutEnabledTouchIDCheckToasterMessage</b><br>Test class: iPayedAppiumFramework.testCases.LoginPageTestCases</td>
+<td></td>
+<td>0</td>
+<td>iPayedAppiumFramework.testCases.LoginPageTestCases@11f0a5a1</td></tr>
 </table><p>
 </body>
 </html>
